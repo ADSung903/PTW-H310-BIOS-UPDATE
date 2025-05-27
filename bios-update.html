@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GIGAIPC H310AI BIOS F5 Firmware UPDATE</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    img.logo {
+      max-width: 200px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 6px;
+      margin: 10px;
+    }
+
+    a.button:hover {
+      background-color: #0056b3;
+    }
+
+    .doc-content {
+      background-color: white;
+      padding: 20px;
+      max-width: 800px;
+      margin: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    code {
+      background-color: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Panasonic Logo -->
+  <img src="panasonic-logo.png" alt="Panasonic Logo" class="logo" />
+
+  <h1>GIGAIPC H310AI BIOS F5 Firmware UPDATE</h1>
+
+  <a class="button" href="https://drive.google.com/drive/folders/1nOAeWrUjBncPwPonWWiDYfkijRO6LhWy?usp=sharing" target="_blank">
+    Open Firmware Folder
+  </a>
+
+  <a class="button" href="https://drive.google.com/file/d/1iCUJUDw0HxV0vtUohJaDAUAFQQSprxAN/view?usp=sharing" target="_blank">
+    View Update Instruction (PDF)
+  </a>
+
+  <div class="doc-content">
+    <h2>Instructions Summary</h2>
+    <p><strong>Step 1:</strong> Prepare a USB drive formatted to FAT32.</p>
+    <p><strong>Step 2:</strong> Copy the BIOS file and flash tool to the USB root directory.</p>
+    <p><strong>Step 3:</strong> Power on the device and enter BIOS using the <strong>[DEL]</strong> key.</p>
+    <p><strong>Step 4:</strong> Navigate to the “Save & Exit” tab and select “Launch EFI Shell from filesystem device.”</p>
+    <p><strong>Step 5:</strong> Run the update command: <code>fs0:\flash.bat</code></p>
+    <p><strong>Step 6:</strong> Wait for the update process to complete. The system will automatically reboot.</p>
+    <p><em>⚠ Please do not power off the system during the update process.</em></p>
+  </div>
+
+</body>
+</html>
