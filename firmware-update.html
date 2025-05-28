@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BIOS Firmware Update</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 30px; background-color: #ffffff; max-width: 800px; margin: auto; }
+    h1 { color: #2c3e50; }
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      margin: 10px 0;
+    }
+    .note { font-style: italic; color: #888; }
+  </style>
+</head>
+<body>
+  <h1>GIGAIPC H310AI BIOS F5 Firmware UPDATE</h1>
+  <p><a class="button" href="https://drive.google.com/drive/folders/1nOAeWrUjBncPwPonWWiDYfkijRO6LhWy?usp=sharing" target="_blank">Open Firmware Folder</a></p>
+  <p><a class="button" href="https://drive.google.com/file/d/1iCUJUDw0HxV0vtUohJaDAUAFQQSprxAN/view?usp=sharing" target="_blank">View Instruction (PDF)</a></p>
+  <h2>Instructions Summary</h2>
+  <ol>
+    <li>Format USB to FAT32.</li>
+    <li>Copy BIOS file and flash tool to USB root directory.</li>
+    <li>Enter BIOS using [DEL] key on boot.</li>
+    <li>Go to Save & Exit > Launch EFI Shell.</li>
+    <li>Run <code>fs0:\flash.bat</code></li>
+    <li>Do not power off. System will reboot automatically.</li>
+  </ol>
+  <p class="note">Please ensure stable power during the update process.</p>
+</body>
+</html>
